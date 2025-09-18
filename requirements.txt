@@ -1,0 +1,21 @@
+# Flask & Authentication
+flask
+flask-login
+flask-bcrypt
+werkzeug
+
+# Supabase (Database + Storage)
+supabase
+
+# Audio/Image Handling
+pydub
+Pillow
+
+# gTTS (Lightweight TTS)
+gTTS
+
+# Deepgram (STT with word timestamps)
+deepgram-sdk
+
+# Util
+python-dotenv
