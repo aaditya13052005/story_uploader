@@ -184,8 +184,9 @@ def upload_story():
                 filename = secure_filename(audio_file.filename)
                 local_audio_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
                 audio_file.save(local_audio_path)
-            elif text.strip():
+            elif text and text != "":
                 local_audio_path = generate_tts(text)
+
                 if isinstance(local_audio_path, tuple):
                     local_audio_path = local_audio_path[0]
                 if local_audio_path and os.path.exists(local_audio_path):
